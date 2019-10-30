@@ -1,0 +1,23 @@
+<div id = "register">
+    <label for="basic-url" id = "lblUser">Enter Username</label>
+    <div class="input-group mb-3">
+    <div class="input-group-prepend">
+        <span class="input-group-text" id="tagUser">Username</span>
+    </div>
+    <input type="text" class="form-control" id="txtUser" aria-describedby="tagUser" [(ngModel)]='_username'>
+    </div>
+    <br/>
+    <label for="basic-url" id = "lblPass">Enter Password</label>
+    <div class="input-group mb-3">
+    <div class="input-group-prepend">
+        <span class="input-group-text" id="tagPass">Password</span>
+    </div>
+    <input type="text" class="form-control" id="txtPass" aria-describedby="tagPass" [(ngModel)]='_password'>
+    </div>
+    <br/>
+    <br/>
+    <span>
+        <button id = "btnOk" (click)="ok()">OK</button>
+        <button id = "btnSkip">SKIP</button>
+    </span>
+</div>
